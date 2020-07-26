@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/styles.css" media="screen" />
+  <title>Desafio</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="center">Pesquisa de usuários</h1>
+
+    <!-- Busca -->
+    <div class="flex-row">
+      <input id="inputBusca" type="text" placeholder="Digite um nome para buscar">
+      <button id="buttonBusca" type="button">Buscar</button>
+    </div>
+
+    <!-- Lista de Usuarios e Estatistica -->
+    <div id="listaUsuariosEstatistica">
+
+      <div class="bordered">
+        <h4><span id="countFoundUsers"></span> usuário(s) encontrado(s)</h4>
+        <div id="users"></div>
+      </div>
+
+      <div class="bordered">
+        <h3>Estatísticas</h3>
+        <p>Sexo masculino: <span id="countM"></span></p>
+        <p>Sexo feminino:  <span id="countF"></span></p>
+        <p>Soma das idades: <span id="sumAge"></span></p>
+        <p>Média das idades: <span id="avgAge"></span></p>
+      </div>
+    </div>
+  
+  </div>
+  <script defer src="./js/script.js"></script>
+</body>
+</html>
